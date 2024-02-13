@@ -1,6 +1,8 @@
 #!/bin/bash
 
+PERSION1=Raju
+PERSION2=Naresh
 
-echo "Raju: hi Naresh, how are you"
-echo "Naresh: i am vary good Raju, how are you"
-echo "Raju: i am good Naresh"
+echo "$PERSION1: hi $PERSION2, how are you"
+echo "$PERSION2: i am vary good $PERSION1, how are you"
+echo "$PERSION1: i am good $PERSION2"
