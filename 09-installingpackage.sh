@@ -20,3 +20,13 @@ then
 else
     echo "installing msql is SUCCESS"
 fi
+
+yum install git -y
+
+if [ $? -ne 0 ]
+
+then
+    echo "ERROR:: installing GIT is FAILED"
+else
+    echo "installing GIT is SUCCESS"
+fi
