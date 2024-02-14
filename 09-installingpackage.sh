@@ -11,4 +11,4 @@ else
     echo "you are in root user"
 fi
 
-sudo yum install mysql -y
+yum install mysql -y
