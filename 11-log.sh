@@ -5,7 +5,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S) #timestamp %F means formate of the time and date
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log" # logfiles will be saved in /etc file
 
-echo "Script stated executing at $Y $TIMESTAMP $N"
+echo "Script stated executing at $TIMESTAMP"
 
 R="\e[31m" # these are the colours R means read colour
 G="\e[32m" # green
@@ -17,7 +17,7 @@ VALIDATE(){
     if [ $1 -ne 0 ]
 
     then
-        echo -e "ERROR::$2...  is $R FAILED $N"
+        echo -e "ERROR::$2...  is $Y FAILED $N"
     else
         echo -e "$2...is $G SUCCESS $N"
     fi
