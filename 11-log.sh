@@ -5,7 +5,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S) #timestamp %F means formate of the time and date
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log" # logfiles will be saved in /etc file
 
-echo "Script stated executing at $TIMESTAMP"
+echo "Script stated executing at $Y $TIMESTAMP $N"
 
 R="\e[31m" # these are the colours R means read colour
 G="\e[32m" # green
