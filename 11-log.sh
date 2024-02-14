@@ -1,21 +1,23 @@
 #!/bin/bash
 
 ID=$(id -u)
-TIMESTAMP=$(date +%F-%H-%M-%S)
+TIMESTAMP=$(date +%F-%H-%M-%S) #timestamp %F means formate of the time and date
 
-LOGFILE="/tmp/$0-$TIMESTAMP.log"
+LOGFILE="/tmp/$0-$TIMESTAMP.log" # logfiles will be saved in /etc file
 
-R="\e[31m"
-G="\e[32m"
-Y="\e[33m"
-N="\e[0m"
+echo "Script stated executing at $TIMESTAMP"
+
+R="\e[31m" # these are the colours R means read colour
+G="\e[32m" # green
+Y="\e[33m" # yellow
+N="\e[0m"  # Normal
 
 VALIDATE(){
 
     if [ $1 -ne 0 ]
 
     then
-        echo -e "ERROR::$2...  is $R FAILED"
+        echo -e "ERROR::$2...  is $R FAILED $N"
     else
         echo -e "$2...is $G SUCCESS $N"
     fi
@@ -25,7 +27,7 @@ VALIDATE(){
 if [ $ID -ne 0 ]
 
 then
-    echo -e "$R ERROR:: please run the script with root access $N"
+    echo -e "$R ERROR:: please run the script with root access $N" #this means between $R and $N will be change colour
     exit 1
 else
     echo "you are in root user"
