@@ -19,7 +19,7 @@ VALIDATE(){
     then
         echo -e "ERROR::$2...  is $R FAILED $N"
     else
-        echo -e "$2...is $Y SUCCESS $N"
+        echo -e "$2...is $G SUCCESS $N"
     fi
 
 }
