@@ -17,7 +17,7 @@ VALIDATE(){
     then
         echo -e "ERROR::$2...  is $R FAILED"
     else
-        echo -e "$2...is $G SUCCESS"
+        echo -e "$2...is $G SUCCESS $N"
     fi
 
 }
@@ -25,7 +25,7 @@ VALIDATE(){
 if [ $ID -ne 0 ]
 
 then
-    echo -e "$R ERROR:: please run the script with root access"
+    echo -e "$R ERROR:: please run the script with root access $N"
     exit 1
 else
     echo "you are in root user"
