@@ -9,9 +9,9 @@ N="\e[0m"
 VALIDATE(){
     if [ $1 -ne 0 ]
     then
-        echo -e "$2 ..is $R FAILED $N"
+        echo -e "$2 .. $R FAILED $N"
     else
-        echo -e "$2 ..is $G SUCCESS $N"
+        echo -e "$2 .. $G SUCCESS $N"
     fi
 }
 
