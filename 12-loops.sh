@@ -2,7 +2,5 @@
 
 for i in [ i..100 ]
 do
-
-echo "$i"
-
+    echo "$i"
 done
