@@ -32,4 +32,4 @@ do
     else
         echo -e "$package is already installed ... $Y SKIP $N"
     fi
-done
+
