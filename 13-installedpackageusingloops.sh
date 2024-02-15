@@ -25,7 +25,7 @@ fi
 
 for package in $@
 do
-    yum list installed $package
+    yum list install $package
     if [ $? -ne 0 ]
     then 
         yum install $package -y
